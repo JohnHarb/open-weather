@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous">
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>OpenWeather</h1>
+    <br></br>
+    <table>
+      <tr>
+        <td>enter a location:</td><td><input type="text" id="location" placeholder="if using coorindates, format as such: 'lat_lon'"/></td>
+      </tr>
+      <tr>
+        <td>enter a location type:</td>
+        <td> <input type="radio" id="cityname" name="type" value="city name"> 
+             <label for="cityname">city name</label><br>
+        </td>
+        <td> <input type="radio" id="zipcode" name="type" value="zip code"> 
+             <label for="zipcode">zip code</label><br>
+        </td>
+        <td> <input type="radio" id="coor" name="type" value="coordinate"> 
+             <label for="coor">coordinate</label><br>
+        </td>
+        <td>
+          <td><button id="submit">submit</button></td>
+        </td>
+        </tr>
+    </table>
+    <table>
+      <tr id= "title"></tr>
+      <tr id="day"></tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
